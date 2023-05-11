@@ -1,0 +1,415 @@
+
+*{
+    box-sizing: border-box;
+}
+html,body,div,ul,input,p{
+    margin: 0;padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 96rem;
+    min-width: 74rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    outline:none;
+    cursor: pointer;
+}
+.head-nav{
+    display: fixed;
+}
+.head-nav ul{
+    list-style: none;
+    float: right;
+    
+}
+.head-nav ul li{
+    float: left;
+}
+.head-nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 10rem;
+    height: 12.4rem;
+    line-height: 12.4rem;
+    text-align: center;
+}
+.head-nav ul li a:hover{
+    background-color: burlywood;
+    font-size: 1.5rem;
+}
+.logo{
+    float: left;
+    width: 24rem;
+}
+img{
+    max-width: 100%;
+}
+.clearfix::after{
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+.photosPlayOne{
+    margin: 0 auto;
+    background: url(../imgs/bgImage.jpg) no-repeat center;
+    height: 50rem;
+    border-top: 1px solid black;
+}
+.slide{
+    height: 40rem;
+    position: relative;
+}
+.slide ul li{
+    position: absolute;
+    left: 20rem;
+    top: 0;
+    list-style: none;
+    
+}
+#left{
+    position: absolute;
+    left: 0;
+    top: 20rem;
+    width: 5rem;
+    height: 10rem;
+    background:black;
+    opacity: 0.5;
+    text-align: center;
+    color: white;
+    font: 700 5rem/10rem 宋体;
+    z-index: 99;
+    display: none;
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 20rem;
+    width: 5rem;
+    height: 10rem;
+    background:black;
+    opacity: 0.5;
+    text-align: center;
+    color: white;
+    font: 700 5rem/10rem 宋体;
+    z-index: 99;
+    display: none;
+}
+
+.center-nav{
+    background-color: #EEE5DE;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.center-nav ul{
+    list-style: none;
+}
+.center-nav ul li{
+    float: left;
+    width: 25%;
+}
+.center-nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center;
+    color: #000;
+}
+.center-nav ul li a:hover{
+    background-color: burlywood;
+    font-size: 1.5rem;
+}
+.ctr-top-box{
+    width: 100%;
+    height: 50%;
+}
+.ctr-top-box span{
+    line-height: 8rem;
+}
+.ctr-bottom-box{
+    width: 100%;
+    height: 50%;
+    line-height: 3rem;
+}
+
+
+.new-goods{
+    margin: 0 auto;
+}
+.new-goods-title{
+    height: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    font: 700 2rem/10rem 宋体;
+}
+.new-goods-imgsLf{
+    float: left;
+    width: 75%;
+    height: 40rem;
+}
+.new-goods-imgsLf img,.new-goods-imgsRt img{
+    width: 100%;
+    height: 100%;
+}
+.new-goods-imgsRt{
+    float: left;
+    width: 25%;
+    height: 38rem;
+    margin-bottom: 2rem;
+}
+.left-top-img{
+    margin-bottom: 2rem;
+    margin-right: 5%;
+    float: left;
+    width: 60%;
+    height: 18rem;
+    text-align: center;
+}
+.right-top-img{
+    margin-bottom: 2rem;
+    margin-right: 5%;
+    float: right;
+    width: 30%;
+    height: 18rem;
+    text-align: center;
+}
+.left-bottom-img{
+    margin-bottom: 2rem;
+    margin-right: 5%;
+    float: left;
+    width: 30%;
+    height: 18rem;
+    text-align: center;
+}
+.right-bottom-img{
+    margin-bottom: 2rem;
+    margin-right: 5%;
+    float: right;
+    width: 60%;
+    height: 18rem;
+    text-align: center;
+}
+.new-goods a:hover{
+    opacity: 0.8;
+}
+
+
+.sofa-types{
+    margin: 0 auto 2rem;
+
+}
+.sofa-types-title{
+    height: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    font: 700 2rem/10rem 宋体;
+}
+
+
+.adv{
+    margin: 0 auto 2rem;
+}
+.show{
+    display: none;
+}
+
+
+.home-effect{
+    margin: 0 auto 2rem;
+}
+.home-effect-title{
+    height: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    font: 700 2rem/10rem 宋体;
+}
+.home-effect div[class="effectbox"]{
+    display: inline-block;
+    width: 30%;
+    margin-right: 4.5%;
+}
+.home-effect div[class="effectbox"]:nth-child(4){
+    margin-right: 0;
+}
+.effectbox div:nth-child(2){
+    text-align: center;
+    color: black;
+    font: 700 2rem/4rem 宋体;
+}
+.effectbox div:nth-child(3){
+    text-align: center;
+    color: gray;
+    font: 700 1rem/2rem;
+}
+
+
+
+.about-us{
+    margin: 0 auto;
+    height: 30rem;
+    background-color: #EEE5DE;
+}
+.about-us-title{
+    height: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    font: 700 2rem/10rem 宋体;
+}
+.about-us-context{
+    height: 10rem;
+    text-align: center;
+    color: gray;
+    font: 300 1.2rem/3rem 宋体;
+}
+.about-us a{
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 10rem;
+    margin: 2.5rem auto;
+    background-color: #d3b93d;
+    color: white;
+}
+
+
+.OurMessages{
+    height: 30rem;
+    margin: 0 auto;
+    background: url(../imgs/bgImage2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.OurMessages::before{
+    content: '';
+    background-color: rgba(0,0,0,0.8);
+    position:absolute;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+.MessageLfBox{
+    height: 85%;
+    width: 40%;
+    float: left;
+}
+.InputText{
+    display: block;
+    float: left;
+    width: 20rem;
+    height: 3rem;
+    margin: 5rem 0 5rem 5rem;
+    outline: none;
+    border: none;
+    color: white;
+    font: 700 1.2rem/3rem 宋体;
+    background-color: #494948;
+}
+.InputBtn{
+    display: block;
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin: 5rem 0 5rem 0;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-left: 1px solid black;
+    background-color: #494948;
+}
+.OurPhoneNum{
+    text-align: left;
+    margin: 0 0 5rem 5rem;
+    color: rgb(172, 166, 166);
+    font: 700 1.5rem/2rem 宋体;
+    clear: both;
+}
+.ThreeLinks{
+    margin: 0 0 0 5rem;
+
+}
+.ThreeLinks ul{
+    list-style: none;
+}
+.ThreeLinks ul li{
+    float: left;
+    margin-right: 5rem;
+}
+.ThreeLinks ul li span{
+    color: white;
+}
+.MessageMidBox{
+    height: 85%;
+    width: 40%;
+    float: left;
+}
+.Installing,.Shopping,.Fixing{
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 5rem 0 0 0;
+}
+.Fixing{
+    margin: 0;
+}
+.Installing dd,.Shopping dd,.Fixing dd{
+    margin-left: 0;
+    color: gray;
+}
+.Installing dt,.Shopping dt,.Fixing dt{
+    margin-bottom: 1rem;
+    font: 700 1.5rem/2rem 宋体;
+    color: white;
+}
+.MessageRtBox{
+    height: 85%;
+    width: 20%;
+    float: left;
+}
+.MessageRtBox::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.MessageRtBox img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.MessageBtmBox{
+    height: 10%;
+    clear: both;
+    text-align: center;
+}
+.MessageBtmBox p{
+    color: gray;
+    height: 50%;
+    
+}
+.MessageBtmBox ul{
+    display: inline-block;
+    height: 50%;
+    list-style: none;
+    
+}
+.MessageBtmBox ul li{
+    float: left;
+    color: gray;
+}
+.MessageBtmBox ul li a{
+    color: gray;
+}
